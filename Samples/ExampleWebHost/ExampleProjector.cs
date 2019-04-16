@@ -15,8 +15,11 @@ namespace LiquidProjections.ExampleWebHost
         private readonly InMemoryDatabase store;
         private readonly ProjectionStats stats;
 
-        public ExampleProjector(IEventMapBuilder<TProjection, string, ProjectionContext> mapBuilder, InMemoryDatabase store,
-            ProjectionStats stats, params IExampleProjector[] childProjectors)
+        public ExampleProjector(
+            IEventMapBuilder<TProjection, string, ProjectionContext> mapBuilder,
+            InMemoryDatabase store,
+            ProjectionStats stats,
+            params IExampleProjector[] childProjectors)
         {
             this.store = store;
             this.stats = stats;

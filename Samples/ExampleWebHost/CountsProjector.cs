@@ -14,7 +14,10 @@ namespace LiquidProjections.ExampleWebHost
         private ExampleProjector<DocumentCountProjection> documentCountProjector;
         private ExampleProjector<CountryLookup> countryLookupProjector;
 
-        public CountsProjector(Dispatcher dispatcher, InMemoryDatabase store, ProjectionStats stats)
+        public CountsProjector(
+            Dispatcher dispatcher,
+            InMemoryDatabase store, 
+            ProjectionStats stats)
         {
             this.dispatcher = dispatcher;
             this.store = store;
