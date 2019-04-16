@@ -6,7 +6,7 @@ using System.Web.Http;
 
 namespace LiquidProjections.ExampleHost
 {
-    [RoutePrefix("Statistics")]
+    //[RoutePrefix("Statistics")]
     public class StatisticsController : ApiController
     {
         private readonly InMemoryDatabase database;
@@ -16,7 +16,13 @@ namespace LiquidProjections.ExampleHost
             this.database = database;
         }
 
-        [Route("{CountsPerState}")]
+        [Route("test")]
+        [HttpGet]
+        public dynamic GetTest()
+        {
+            return new { test = "OK" };
+        }
+        [Route("countries/{country:Guid}/kind/{kind}")]
         [HttpGet]
         public dynamic GetCountsPerState(Guid country, string kind)
         {

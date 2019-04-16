@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28809.33
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27C8B175-6555-4591-87B1-177A2874FEA9}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,6 +23,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidProjections.Testing", "Src\LiquidProjections.Testing\LiquidProjections.Testing.csproj", "{B4EA7831-8282-4F3A-A057-2DEB59611A68}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidProjections.Owin", "Src\LiquidProjections.Owin\LiquidProjections.Owin.csproj", "{43C0A9ED-8094-4646-85A4-6EAA03505A20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleWebHost", "Samples\ExampleWebHost\ExampleWebHost.csproj", "{C40F3004-F703-4BA8-BD81-E3EAAB25DE22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidProjections.Abstractions", "Src\LiquidProjections.Abstractions\LiquidProjections.Abstractions.csproj", "{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +54,14 @@ Global
 		{43C0A9ED-8094-4646-85A4-6EAA03505A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C0A9ED-8094-4646-85A4-6EAA03505A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C0A9ED-8094-4646-85A4-6EAA03505A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40F3004-F703-4BA8-BD81-E3EAAB25DE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40F3004-F703-4BA8-BD81-E3EAAB25DE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40F3004-F703-4BA8-BD81-E3EAAB25DE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40F3004-F703-4BA8-BD81-E3EAAB25DE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +72,10 @@ Global
 		{7B47454D-0129-43CB-AED5-27AFAFDB5D7C} = {AE89AB5E-BC68-4AA3-9183-A222AC81691C}
 		{B4EA7831-8282-4F3A-A057-2DEB59611A68} = {AE89AB5E-BC68-4AA3-9183-A222AC81691C}
 		{43C0A9ED-8094-4646-85A4-6EAA03505A20} = {AE89AB5E-BC68-4AA3-9183-A222AC81691C}
+		{C40F3004-F703-4BA8-BD81-E3EAAB25DE22} = {866E1395-DA55-4E79-B3AA-E610D97BEF18}
+		{3B59DA25-C85F-47C5-BEF2-A9D5216D64B9} = {AE89AB5E-BC68-4AA3-9183-A222AC81691C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19A4E741-4931-40CA-BD9A-2873E4E8D058}
 	EndGlobalSection
 EndGlobal
